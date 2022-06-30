@@ -27,7 +27,7 @@
 - 로봇 개발에 필요한 여러 툴 제공 (Debuging tool etc...)
 - 동작에 있어 안전함을 보장하는 Robot OS
 
-![Untitled](ROS2_Study%20Day1%20ab9fed69ab114bb0b0bd09e1c4679a2d/Untitled.png)
+![Untitled](./Day1/Untiltitled.png)
 
 각 필요한 부분을 패키지로 만들어 하나의 로봇 서비스를 제작
 ROS는 패키지라는 단위로 동작
