@@ -26,9 +26,8 @@
 - 기존에 존재하는 로봇 오픈소스 사용 가능
 - 로봇 개발에 필요한 여러 툴 제공 (Debuging tool etc...)
 - 동작에 있어 안전함을 보장하는 Robot OS
-![Untitled](https://user-images.githubusercontent.com/80799025/176657442-9bef6bba-02c0-4a78-895e-1caa1a1c3165.png)
 
-![Untitled](./Day1/Untiltitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/176657482-b160c2bd-eb92-4317-bfcf-2a140b455b0a.png)
 
 각 필요한 부분을 패키지로 만들어 하나의 로봇 서비스를 제작
 ROS는 패키지라는 단위로 동작
@@ -40,8 +39,7 @@ Embedded - rosserial (MCU, ECU와 communication), micro_ROS
 Visualization, Debug Tools - RViz, RQt  ->  시각화, 디버깅
 
 </aside>
-
-[![Untitled](ROS2_Study%20Day1%20ab9fed69ab114bb0b0bd09e1c4679a2d/Untitled%201.png)](https://github.com/YDongHyun/ROS2_Study/blob/main/Day1/Day1/Untitled%201.png?raw=true)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/176657501-5086739b-f238-4e11-81f7-e035c0d8871c.png)
 
 Gazabo example
 
@@ -60,8 +58,8 @@ Gazabo example
 ROS가 실제 상용화에 부족하다 판단 따라서 ROS2를 개발.
 
 ### ROS2 등장
+![Untitled 2](https://user-images.githubusercontent.com/80799025/176657511-e49b20b2-c70c-43e8-a287-0f8e110b0fe7.png)
 
-![Untitled](ROS2_Study%20Day1%20ab9fed69ab114bb0b0bd09e1c4679a2d/Untitled%202.png)
 
 - ROS1에 비해 더 많은 운영체제 지원,
 - 사용자가 직접 터미널을 통해 master를 먼저 실행 -> 삭제
