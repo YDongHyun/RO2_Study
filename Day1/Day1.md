@@ -26,6 +26,7 @@
 - 기존에 존재하는 로봇 오픈소스 사용 가능
 - 로봇 개발에 필요한 여러 툴 제공 (Debuging tool etc...)
 - 동작에 있어 안전함을 보장하는 Robot OS
+![Untitled](https://user-images.githubusercontent.com/80799025/176657442-9bef6bba-02c0-4a78-895e-1caa1a1c3165.png)
 
 ![Untitled](./Day1/Untiltitled.png)
 
