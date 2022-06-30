@@ -40,7 +40,7 @@ Visualization, Debug Tools - RViz, RQt  ->  시각화, 디버깅
 
 </aside>
 
-![Untitled](ROS2_Study%20Day1%20ab9fed69ab114bb0b0bd09e1c4679a2d/Untitled%201.png)
+[![Untitled](ROS2_Study%20Day1%20ab9fed69ab114bb0b0bd09e1c4679a2d/Untitled%201.png)](https://github.com/YDongHyun/ROS2_Study/blob/main/Day1/Day1/Untitled%201.png?raw=true)
 
 Gazabo example
 
