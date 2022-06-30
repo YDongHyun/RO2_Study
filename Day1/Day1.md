@@ -33,10 +33,12 @@
 ROS는 패키지라는 단위로 동작
 
 <aside>
-💡 ROS의 다양한 툴
--Simulation - Gazabo, Ignition, ISSAC, webots ->ROS를 위한 툴
--Embedded - rosserial (MCU, ECU와 communication), micro_ROS
--Visualization, Debug Tools - RViz, RQt  ->  시각화, 디버깅
+💡
+  
+ROS의 다양한 툴
+- Simulation - Gazabo, Ignition, ISSAC, webots ->ROS를 위한 툴
+- Embedded - rosserial (MCU, ECU와 communication), micro_ROS
+- Visualization, Debug Tools - RViz, RQt  ->  시각화, 디버깅
 </aside>
 
 ![Untitled 1](https://user-images.githubusercontent.com/80799025/176657501-5086739b-f238-4e11-81f7-e035c0d8871c.png)
