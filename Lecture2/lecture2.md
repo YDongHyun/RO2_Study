@@ -40,7 +40,7 @@ apt (Advanced Package Tool)은 우분투 패키의 관리자
 
 설치후 테스트 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3625a1bf-912d-4fab-b1d2-0436b169235a/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/176866156-007829f1-efab-4a99-aab4-3e5eeeeb12d7.png)
 
 정상적으로 terminator가 설치 실행이 됨을 확인했다.
 
@@ -50,13 +50,13 @@ apt (Advanced Package Tool)은 우분투 패키의 관리자
 - 여러 Extension 지원
 - 더욱 편리한 개발 작업 가능
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dec55f2d-022d-4ea2-9edc-7229fad956c7/Untitled.png)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/176866307-ae9605e4-fe88-4628-a225-2ca3d017d07d.png)
 
 VScode 홈페이지 파일을 다운받은 후 터미널에서 압축을 풀어 설치
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b11304e-fdf9-4041-aa6d-130653d0db42/Untitled.png)
+![Untitled 2](https://user-images.githubusercontent.com/80799025/176866334-2bace520-25ff-4725-828e-250b3fcb67f7.png)
 
-Screenshot from 2022-07-01 17-27-14VScode가 정상적으로 설치되었다.
+VScode가 정상적으로 설치되었다.
 
 ### 추가설정
 
@@ -135,7 +135,7 @@ $ gazebo
 
 터미널에 복사하여 설치
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9c4fcd56-0026-43f0-b9e4-863c69aad683/Untitled.png)
+![Untitled 3](https://user-images.githubusercontent.com/80799025/176866396-73c2201b-f83b-4973-b85b-901eee47fbdb.png)
 
 Gazebo가 정상적으로 설치되었다. 
 
@@ -156,7 +156,7 @@ $ sudo reboot
 
 자동으로 그래픽 드라이버를 설치하였다.
 
-![Screenshot from 2022-07-01 18-08-40.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33ee2345-8ac9-4bf7-b552-152ff501fe8a/Screenshot_from_2022-07-01_18-08-40.png)
+![Screenshot_from_2022-07-01_18-08-40](https://user-images.githubusercontent.com/80799025/176866414-22ee0fe6-7400-4881-8314-9a026c7a52f3.png)
 
 정상적으로 그림자 출력 확인
 
@@ -186,7 +186,7 @@ $ ros2 run demo_nodes_py listener
 
 두 터미널에서 같은 숫자가 출력되면 정상
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f0999710-2722-4bf4-9028-873609f1fb72/Untitled.png)
+![Untitled 4](https://user-images.githubusercontent.com/80799025/176866435-baea6bde-6bfe-4f05-8aae-bdd6e8b03c46.png)
 
 두 터미널에서 같은 숫자가 출력됨을 확인
 
@@ -246,11 +246,11 @@ $ ls
 
 colcon을 이용한 빌드
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5446f90c-df36-46ef-8060-dd441fe84d15/Untitled.png)
+![Untitled 5](https://user-images.githubusercontent.com/80799025/176866470-aae9fd14-e13f-43c0-b7be-3f7a9da1703d.png)
 
 최종적으로 빌드가 완료되었다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c58ff6fa-1151-449d-9f90-7cd9ba7c90e9/Untitled.png)
+![Untitled 6](https://user-images.githubusercontent.com/80799025/176866508-d6663cfe-07ef-4262-bbd8-b063290180c4.png)
 
 지정한 디렉토리 파일이 생성된것을 확인할 수 있다.
 
@@ -294,7 +294,7 @@ rosfoxy
 ros2 run turtlesim turtle_teleop_key
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/79a21591-269d-46ec-af9b-93348fdebb10/Untitled.png)
+![Untitled 7](https://user-images.githubusercontent.com/80799025/176866539-c460bf49-b8a5-4739-9d3b-6b0af48e53c1.png)
 
 정상적으로 작동함을 확인하였다.
 
