@@ -12,7 +12,7 @@ Windows 업데이트 확인으로 최신상태를 유지
 
 ## Install Dependencies
 
---
+
 
 ### Chocolatey
 
@@ -78,7 +78,7 @@ choco install -y python --version 3.9.7
 
 ```powershell
 > choco install git
-> git --version
+> git version
 ```
 
 ![Untitled 4](https://user-images.githubusercontent.com/80799025/177042565-5b97d903-6a9c-4ee6-9f0d-297a7785de9e.png)
@@ -188,7 +188,7 @@ Windows Terminal을 통해 OpenCV전용 환경변수 추가
 
 ## ROS2 설치
 
---
+
 
 설치방법 2가지
 
@@ -209,7 +209,7 @@ windows terminal을 관리자 권한으로 실행시키고 다음 명령어 입�
 
 ## 설치 후 개발환경 구축
 
---
+
 
 - workspace 생성 후 colcon build 및 기본 커멘드 소개
 - windows terminal 환경 Setup
