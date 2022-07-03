@@ -12,7 +12,7 @@ Windows 업데이트 확인으로 최신상태를 유지
 
 ## Install Dependencies
 
----
+--
 
 ### Chocolatey
 
@@ -24,7 +24,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 PowerShell 관리자 권한으로 실행(`windows` + `X` + `A`) 후 코드 입력하여 설치
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/177042516-cb1922d6-db2e-4421-a61a-449b1ae33f85.png)
+
 
 PowerShell 재시작 후, choco명령어를 입력하여 정상적으로 설치되었는지 확인
 
@@ -42,9 +43,9 @@ choco install -y microsoft-windows-terminal
 
 PowerShell에서 다음 명령어를 입력하여 설치
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%202.png)
-
 Window Terminal를 관리자 권한으로 실행
+
+![Untitled 2](https://user-images.githubusercontent.com/80799025/177042539-6b8bae8c-028d-4c6a-8d4d-6b27e306b79d.png)
 
 정상적으로 설치되었다.
 
@@ -67,7 +68,7 @@ choco install -y python --version 3.9.7
 
 설치 후 Windows Terminal을 실행시켜 python을 입력하여 잘 설치되었는지 확인한다.
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/80799025/177042553-b63195eb-1c78-4eb3-91ae-45057c46e55f.png)
 
 정상적으로 설치되었다.
 
@@ -80,7 +81,7 @@ choco install -y python --version 3.9.7
 > git --version
 ```
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/80799025/177042565-5b97d903-6a9c-4ee6-9f0d-297a7785de9e.png)
 
 정상적으로 설치되었다.
 
@@ -109,13 +110,13 @@ C:\Program Files\OpenSSL-Win64의 경로에 설치하였따.
 > setx -m OPENSSL_CONF "C:\Program Files\OpenSSL-Win64\bin\openssl.cfg"
 ```
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/80799025/177042605-e125b19a-4acf-47e7-94c1-1d5048e1e5a2.png)
 
 시스템 환경변수에 OpenSSL 위치 추가
 
 시스템 설정→ 시스템 → 고급시스템 설정 → 고급 (환경변수) → Path→ OpenSSL의 경로 입력
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/80799025/177042608-c07e02ac-2697-459e-8da0-834591888674.png)
 
 경로를 입력하여 환경변수에 추가하였다.
 
@@ -177,7 +178,7 @@ OpenCV는 오픈소스 Computer Vision Library이다.
 
 그 후 환경변수에  `C:\opencv\x64\vc16\bin` 위치를 추가한다.
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%207.png)
+![Untitled 7](https://user-images.githubusercontent.com/80799025/177042624-d792df7e-86fe-42ab-9a9f-1a27629bca80.png)
 
 Windows Terminal을 통해 OpenCV전용 환경변수 추가 
 
@@ -187,7 +188,7 @@ Windows Terminal을 통해 OpenCV전용 환경변수 추가
 
 ## ROS2 설치
 
----
+--
 
 설치방법 2가지
 
@@ -208,7 +209,7 @@ windows terminal을 관리자 권한으로 실행시키고 다음 명령어 입�
 
 ## 설치 후 개발환경 구축
 
----
+--
 
 - workspace 생성 후 colcon build 및 기본 커멘드 소개
 - windows terminal 환경 Setup
@@ -233,7 +234,7 @@ ROS2는 일반 cmd가 아닌 x64 Native Tools Command를 사용.
 > c:\gcamp_ros2_ws>colcon build --symlink-install --packages-select gcamp_gazebo
 ```
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%208.png)
+![Untitled 8](https://user-images.githubusercontent.com/80799025/177042641-65cf0e51-fb54-438e-8ff4-09a4c1974836.png)
 
 다음과 같은 성공메시지를 확인하였다.
 
@@ -263,7 +264,7 @@ ROS2는 일반 cmd가 아닌 x64 Native Tools Command를 사용.
 
 <`your-uuid>`에 앞서구한 코드를 집어넣는다.
 
-![제목 없음.png](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C.png)
+![제목_없음](https://user-images.githubusercontent.com/80799025/177042661-88f72030-6b9a-45e1-8bc4-c3ab5e457698.png)
 
 다음과 같이 ros2-foxy가 새로 생긴것을 확인하였다.
 
@@ -308,7 +309,7 @@ setx -m SDF_PATH C:\opt\ros\foxy\x64\share\sdformat\1.6
 > ros2 launch gcamp_gazebo gcamp_world_windows.launch.py
 ```
 
-![Untitled](ROS2_Study%20Lecture3%2037c4911c4fb441509a0b6107f5ea188f/Untitled%209.png)
+![Untitled 9](https://user-images.githubusercontent.com/80799025/177042668-8acad099-635b-4d0c-a7ba-126f8b82df77.png)
 
 다음과 같이 데모가 잘 실행됬음을 확인하였다.
 
