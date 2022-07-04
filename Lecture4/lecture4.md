@@ -127,9 +127,8 @@ CTRL-C to quit
 
 ![Untitled 2](https://user-images.githubusercontent.com/80799025/177107228-d3aa76c5-c209-4181-af09-f4d8aff7ed09.png)
 
-Anaconda와 같은 가상환경을 사용하면 실행 X, 반드시 deactivate
-
 Gazebo 종료시 killg 명령어로 종료
+
 
 Gazebo는 종료가 잘 안되는 문제가 있다. 따라서 killg 명령어로 Gazebo를 종료한다.
 
