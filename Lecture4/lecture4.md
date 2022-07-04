@@ -2,7 +2,6 @@
 
 # 실습을 위한 Gazebo Simulation
 
----
 
 이전 두 강의를 통해 ubuntu와 windows에 개발환경을 구축하였다.
 
@@ -10,7 +9,6 @@
 
 ## 환경구성
 
----
 
 ### 프로젝트 Clone && Build
 
@@ -45,11 +43,12 @@ filenames=/home/<ydh>/gcamp_ws/src/gcamp_ros_basic/GazeboFiles/models
 ex) /home/swimming/gcamp_ros2_ws/src/gcamp_ros2_basic/gcamp_gazebo/GazeboFiles/models
 ```
 
-![Untitled](ROS2_Study%20Lecture4%20dd426f7346f94e1488985dbad7fd0785/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/177107149-9699edab-b13e-400d-8e40-2a519b2d871f.png)
 
 다음과 같은 창이 뜨는데 경로를 파일에 붙여넣고 Save.
 
 ❗pwd 명령어를 통해 현재 폴더의 위치를 알 수 있다.
+
 
 ### Launch
 
@@ -64,27 +63,27 @@ $ source /opt/ros/foxy/setup.bash && source ~/gcamp_ros2_ws/install/local_setup.
 $ ros2 launch gcamp_gazebo gcamp_world.launch.py
 ```
 
-![Untitled](ROS2_Study%20Lecture4%20dd426f7346f94e1488985dbad7fd0785/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/177107185-0e92125e-c92c-4780-8d07-01674b3a4642.png)
 
 다음과 같이 Rviz와 Gazebo가 실행되었다.
 
 Rviz로 로봇의 시점을 확인할 수 있다.
 
-Gazobo 사용법
+### Gazobo 사용법
 
 - 마우스 왼쪽 클릭 및 드래그 → 화면 이동
 - 마우스 휠 → 확대/축소
 - 마우스 휠 클릭 및 드래그 → 화면 회전
 - 종료 방법 - `killg`
     
-    ![프레젠테이션1.png](ROS2_Study%20Lecture4%20dd426f7346f94e1488985dbad7fd0785/%ED%94%84%EB%A0%88%EC%A0%A0%ED%85%8C%EC%9D%B4%EC%85%981.png)
+![프레젠테이션1](https://user-images.githubusercontent.com/80799025/177107204-202948b1-4a41-4fc7-9a55-81eb832cd2a6.png)
     
 1. 시점 이동
 2. 물체 클릭 후 물체 이동
 3. 물체 클릭 후 물체 회전
 4. 물체 생성 
 5. 빛 (광원) 생성
-6. 복사, 붙여넣기\
+6. 복사, 붙여넣기
 7. 클릭 후 평면 시점 변경
 
 Gazebo는 3차원 좌표체계를 가지고 있다.
@@ -126,7 +125,7 @@ CTRL-C to quit
 
 다음 명령어를 실행하면 키보드로 로봇을 조작할 수 있다.
 
-![Untitled](ROS2_Study%20Lecture4%20dd426f7346f94e1488985dbad7fd0785/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/80799025/177107228-d3aa76c5-c209-4181-af09-f4d8aff7ed09.png)
 
 Anaconda와 같은 가상환경을 사용하면 실행 X, 반드시 deactivate
 
@@ -134,7 +133,7 @@ Gazebo 종료시 killg 명령어로 종료
 
 Gazebo는 종료가 잘 안되는 문제가 있다. 따라서 killg 명령어로 Gazebo를 종료한다.
 
----
+
 
 + xacro 관련 오류가 발생시에는 
 
