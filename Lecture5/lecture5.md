@@ -28,7 +28,6 @@
 ### Node의 실행
 
 
-
  단일 노드의 실행은  `ros2 run`로 확인
 
  전에 설치해둔 turtlesim을 이용하였다.
@@ -114,7 +113,7 @@ $ rqt_graph
 
  아래 링크에 있는 폴더 하나하나가 폴더이다.
 
-[https://github.com/rnanosaur/nanosaur](https://github.com/rnanosaur/nanosaur)
+ [https://github.com/rnanosaur/nanosaur](https://github.com/rnanosaur/nanosaur)
 
 ![Untitled 5](https://user-images.githubusercontent.com/80799025/177295779-bf5f866d-b70c-4bf6-8bbf-d4dbd19f79fc.png)
 
@@ -146,9 +145,8 @@ $ ros2 pkg create --build-type ament_python <패키지이름> --dependencies rcl
 
  예제로 패키지를 하나 만들어 보았다.
 
-![Untitled 6](https://user-images.githubusercontent.com/80799025/177295809-07cd2c8e-aaa2-43e9-8a90-648f7c846e02.png)![Untitled 5](https://user-images.githubusercontent.com/80799025/177295817-390d4687-2926-4ae5-9892-30a77a3b7cd2.png)
+![Untitled 6](https://user-images.githubusercontent.com/80799025/177295809-07cd2c8e-aaa2-43e9-8a90-648f7c846e02.png)!
 
-
- test_pack이라는 패키를 생성하였다.
+ test_pack이라는 패키지를 생성하였다.
 
  정상적으로 패키지가 생성됨을 확인였다.
