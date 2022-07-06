@@ -1,5 +1,3 @@
-# ROS2_Study Lecture6
-
 # ROS2 Launch, lacuch file 작성
 
 ## launch file
@@ -16,7 +14,7 @@ launch 명령어는 아래와 같다
 $ cd ~/gcamp_ros2_ws/src/gcamp_ros2_basic/gcamp_gazebo/launch
 ```
 
-![Untitled](ROS2_Study%20Lecture6%2008abc0d0492a4d548e61240dd959ad93/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/177537484-4649b69c-7923-4ee7-88cc-be87dc8a505f.png)
 
 다음과 같이 여러 런치파일을 확인할 수 있다.
 
@@ -88,8 +86,8 @@ $ cd ~/gcamp_ros2_ws/src/gcamp_ros2_basic/gcamp_gazebo/launch
             ]
         )
     ```
+    </br>
     
-
 ### .launch.py
 
 Python문법을 기본적으로 사용
@@ -138,6 +136,8 @@ $ ros2 run rviz2 rviz2
 이를 통해 알 수 있는 사실은 예제의 launch file을 실행하면
 
 gazebo 실행, robot 등장, rviz실행 3가지 작업이 동시에 동작한다는 것이다.
+</br></br>
+
 
 ## ExecutProcess 방식
 
@@ -162,6 +162,7 @@ $ ros2 launch gcamp_gazebo first_launch.launch.py
 ```
 
 실행 결과 rviz가 단독으로 실행됨을 확인하였다.
+</br></br>
 
 **문법**
 
@@ -170,6 +171,7 @@ $ ros2 launch gcamp_gazebo first_launch.launch.py
 - `**ExecuteProcess`** : 프로세스 하나를 실행시킨다는 구분의 개념.
     - `**cmd`** :  터미널에서 입력하는 커멘드를 그대로 실행하고자 할 시에 사용.
     - `**output`** : Error log 등의 output이 출력되는 수단을 입력.
+</br></br>
 
 ### Node 방식
 
@@ -183,7 +185,7 @@ $ ros2 run turtlesim draw_square
 
 다음 명령어를 두 터미널에 실행하면 거북ㅋ이가 사각형을 그린다.
 
-![Untitled](ROS2_Study%20Lecture6%2008abc0d0492a4d548e61240dd959ad93/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/177537518-bb017622-4993-49d8-942b-ff51323a4b5c.png)
 
 이 명령을 수행하기 위해 2개의 터미널을 이용하였다.
 
@@ -240,6 +242,7 @@ launch file 하나로 사각형을 그리는 거북이를 생성할 수 있었�
     
 
 제일 아랫줄에서 보이듯이 노드방식을 사용하면 어떤것이 실행되는지 직관적으로 알 수 있다.
+</br></br>
 
 **문법**
 
@@ -247,6 +250,7 @@ launch file 하나로 사각형을 그리는 거북이를 생성할 수 있었�
     - `**package**` : 실행시킬 Node가 포함된 package를 선택
     - `**executable**` : c++ Node의 경우, colcon build를 하면 실행 가능한 프로그램 생성. python의 경우도 추가 작업이 필요.  기존 커멘드의 마지막 인자라고 생각.
     - `**parameters**` : 실행시킬 Node의 추가 매개변수
+</br></br>
 
 ### parameter
 
@@ -259,6 +263,7 @@ yaml파일 형식  → parameter값을 적어놓은 파일
 위 링크에서 보듯이 , yml(yaml) 파일 안에 parameter값들이 있음을 알 수 있다.
 
  parameter 파일을 사용하 위해 launch file py 파일 안에서 parameter파일을 가져와야 한다.
+ </br></br>
 
 ### ExecuteProcss VS Node
 
