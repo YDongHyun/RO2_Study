@@ -1,5 +1,3 @@
-# ROS2_Study Lecture8
-
 # Topic 프로그래밍 - Python
 
 # Publisher Node 작성
@@ -16,6 +14,7 @@
 ```python
 #!/usr/bin/env python3
 ```
+</br>
 
 - geometry_msgs/msg/Twist  ⇒ `from geometry_msgs.msg import Twist`
 - rclpy, message type인 Twist를 import
@@ -26,6 +25,7 @@ from rclpy.node import Node
 
 from geometry_msgs.msg import Twist
 ```
+</br>
 
 - `rclpy.spin` 은 기본적으로 계속해서 주기적으로 Node를 동작
 → 따라서 로봇 무한 회전
@@ -51,6 +51,7 @@ def main(args=None):
 		# 마찬가지로 사용을 마친 Node는 종료
     rclpy.shutdown()
 ```
+</br>
 
 - 만약 일정시간동안만 움직이고 싶을 땐 아래처럼 while문을 이용
 
@@ -86,6 +87,7 @@ def main(args=None):
 
     rclpy.shutdown()
 ```
+</br>
 
 - ROS2의 거의 모든 개발은 Class 형태로 개발, Class형태의  더불어 모든 Class는 Node를 기본적으로 상속받음. 이 Node안에 수적인 기능들이 모두 구현 (Composition)
 - 상속이란, 상위 Class가 구현해 둔 것을 추가 개발 없이 동일하게 사용할 수 있다는 것과 더불어, 상속받은 Class 자신만의 기능을 추가할 수 있다는 뜻
@@ -139,8 +141,10 @@ class CmdVelPublisher(Node):
         stop_msg.angular.z = 0.0
         self.publisher.publish(stop_msg)
 ```
+</br>
 
 다음 함수를 통해 publisher에게 callback을 해줄 수 있다.
+</br>
 
 또한 twist_msg를 수정하여 로봇의 움직임을 수정해보았다.
 
@@ -151,7 +155,9 @@ twist_msg.linear.x = 1.0
 twist_msg.angular.z = 0.0
 self.publisher.publish(twist_msg)
 ```
+</br>
 
-![Untitled](ROS2_Study%20Lecture8%207e150ab1a6c24010943e6e1ae5769a05/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/178148116-70ebe620-156e-4db0-87a5-1dbd7ffa5a76.png)
+
 
 코드를 수정하고 실행 한 결과 로봇이 직진을 하는것을 확인할 수 있었다.
