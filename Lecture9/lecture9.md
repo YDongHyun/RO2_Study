@@ -59,7 +59,7 @@ class LaserSubscriber(Node):
 		# Topic을 통해 subscribe 할 때마다 이 함수가 실행
 		# 그리고 두번째 매개변수인 msg에는 전달받은 Message가 담겨 있습니다.
     def **sub_callback**(self, msg):
-																				#ranges = 모든 거리 데이터
+								#ranges = 모든 거리 데이터
 				self.get_logger().info(f'Raw Laser Data : {msg.ranges}')
 ```
 </br>
