@@ -28,7 +28,7 @@ class ParkingNode(Node):
         twist_msg = Twist()
         distance_forward = msg.ranges[360] #전방 거리만 출력
 
-        if distance_forward > 0.5: #거리가 0.5 이상이면 전진)
+        if distance_forward > 0.5: #거리가 0.5 이상이면 전진
             self.get_logger().info(f'Distance from Front Object : {distance_forward}')
             twist_msg.linear.x = 1.0 #값 형식이 float 이므로 소수점 이하 자리까지 표현
             self.publisher.publish(twist_msg)
