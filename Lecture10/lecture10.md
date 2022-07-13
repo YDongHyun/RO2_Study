@@ -1,5 +1,3 @@
-# ROS2_Study Lecture10
-
 # Node 프로그래밍 C++
 
 저번 강의에서는 Python을 이용하였고, 이번 예제에서는 C++을 이용하여 프로그래밍
@@ -34,7 +32,7 @@ $ ros2 run cpp_first_pkg lifecycle_node #Ctrl+C까지 확인
 
 C++ 코드를 살펴보기 위해 Vscode를 이용하였다.
 
-![Untitled](ROS2_Study%20Lecture10%20f60b26e9463f470682fc918e6e20dc53/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/178677256-7faf12ab-3381-4076-9f56-775d6bab30b7.png)
 
 다음과 같이 코드들을 확인고 수정할 수 있다.
 
@@ -170,9 +168,9 @@ int main(int argc, char **argv)
 }
 ```
 
-코드를 실행한 결과는 다음과 같다.
+![Untitled 1](https://user-images.githubusercontent.com/80799025/178677066-803db44d-5f7a-4503-998f-8d80f781d38b.png)
 
-![Untitled](ROS2_Study%20Lecture10%20f60b26e9463f470682fc918e6e20dc53/Untitled%201.png)
+코드를 실행한 결과는 다음과 같다.
 
 따라서 lifecycle은 다음 순서로 진행됨을 알 수 있다.
 
