@@ -1,5 +1,3 @@
-# ROS2_Study Lecture11
-
 # Topic 프로그래밍 - C++
 
 ## Build & 예제실행
@@ -19,6 +17,7 @@ $ ros2 run cpp_topic_pkg cmd_vel_pub_node
 다음 명령어를 실행하면 파이썬의 예제와 같이 5초간 회전하고 정지한다.
 
 C++노드 잘 작동됨을 확인였다.
+</br>
 
 ## Publish Node 작성
 
@@ -35,6 +34,7 @@ C++노드 잘 작동됨을 확인였다.
 - snake_case : 모두 소문자
 
 c++ 헤더는 파이썬과 다르 snake_case를 취한다.
+</br>
 
 ### Class 내부
 
@@ -95,6 +95,7 @@ public:
 대략적인 개요와 흐름은 이해했지만 완벽하지 못해
 
 C++의 문법을 더 공부한 후 코드를  분석할 계획이다.
+
 
 ## Create_publisher
 
@@ -227,6 +228,7 @@ EX)
 using LaserScan = sensor_msgs::msg::LaserScan;
 ```
 
+
 ## create_subscription
 
 `create_subscription` 함수로 subscription을 생성
@@ -242,6 +244,7 @@ using LaserScan = sensor_msgs::msg::LaserScan;
 // 세번째 매개변수 std::bind를 통해 callback함수를 전달
 // callback함수의 매개변수가 1개이므로, std::placeholders::_1이 사용ranges 배열이 기존 Python에서는 list 형식으로 표현되었지만, C++에서는 vector로 표현된다는 점에서 차이가 있습니다.
 ```
+
 
 ## Packing Example
 
@@ -266,6 +269,6 @@ packing.cpp파일의 중요한 로직을 살펴보았다.
 
 이번 코드는 쉽게 해석이 되었다.
 
-![Untitled](ROS2_Study%20Lecture11%20977652ce630f4b158d50ec79e7d4af79/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/178928817-2a2cdf13-4202-412b-b1f7-5d72dd3f7af5.png)
 
 이를 실제 실행해 보았고, distance가 0.8에 가까워지자 정지하였다.
