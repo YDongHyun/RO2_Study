@@ -1,5 +1,3 @@
-# ROS2_Study Lecture12
-
 # ROS2_Service
 
 ## New Robot 예제
@@ -36,7 +34,7 @@ $ rosfoxy
 $ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r __ns:=/skidbot
 ```
 
-![Untitled](ROS2_Study%20Lecture12%201f9e7d929f324f22839db37ee1ccd8b8/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/179168313-323a099d-4fd7-4bf2-ba5a-368edeb76149.png)
 
 두개의 로봇을 각각 조종 할 수 있다.
 
@@ -92,11 +90,11 @@ Topic과 마찬가지로 Service의 srv의 정보를 확인할 수 있다.
 $ ros2 interface show gazebo_msgs/srv/SpawnEntity
 ```
 
-![Untitled](ROS2_Study%20Lecture12%201f9e7d929f324f22839db37ee1ccd8b8/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/179168402-3ae1e547-2564-44fd-9a65-4a9eac167a09.png)
 
 다음과 같이 정보가 나오는데, 여기서 - - - 라인의 의미를 살펴보아야 한다.
 
-- - -는  request 와 response를 구분하는 선이다.
+ ---는  request 와 response를 구분하는 선이다.
 
 ## Service Call Command
 
@@ -134,7 +132,7 @@ name 이라는 requset를 통해 모델을 지울수 있을것이다.
 $ ros2 service call /delete_entity gazebo_msgs/srv/DeleteEntity "{name: 'skidbot'}"
 ```
 
-![Untitled](ROS2_Study%20Lecture12%201f9e7d929f324f22839db37ee1ccd8b8/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/80799025/179168415-bb22bf00-b7fa-4ad8-8b9b-f51ee77f77ee.png)
 
 다음과 같이 초록색 로봇이 사라진 것을 확인할 수 있다.
 
