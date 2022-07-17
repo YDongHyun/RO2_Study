@@ -1,5 +1,3 @@
-# ROS2_Study Lecture13
-
 # Service 프로그래밍 - Python
 
 ## Service Client 작성
@@ -8,7 +6,7 @@
 
 이 client의 srv타입은 다음과 같다.
 
-![Untitled](ROS2_Study%20Lecture13%20c736a9e0237748d2beb22e465763e212/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/179396591-72388179-b807-4d14-9a1a-74d493dc975a.png)
 
 Class 내부를 분석해 보았다.
 
@@ -40,7 +38,7 @@ class SpawnRobot(Node):
 
 ### create_client
 
-**`create_client`**Service Client를 생성할 시 필요한 매개변수
+`create_client`Service Client를 생성할 시 필요한 매개변수
 
 - `SpawnEntity` : 사용할 srv 타입
 - `/spawn_entity` : request를 보낼 Service 이름
@@ -70,7 +68,7 @@ class SpawnRobot(Node):
 
 위 코드에 future라는 생소한 표현이 나온다.
 
-future는 특정 작업에 대해 작업이 완료될 것임을 약속 것.
+future는 특정 작업에 대해 작업이 완료될 것임을 약속한 것이다.
 
 ```python
     #robot_spawn_node.send_req()는 반드시 끝날 것을 보장
@@ -132,7 +130,7 @@ $ rosfoxy
 $ ros2 run py_service_pkg robot_turning_client
 ```
 
-![Untitled](ROS2_Study%20Lecture13%20c736a9e0237748d2beb22e465763e212/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/179396598-9a7ab6c2-9803-4153-96ca-b00a849a068e.png)
 
 다음과 같이 입력을 받아 로봇을 움직이고, 결과를 출력한다
 
@@ -144,7 +142,7 @@ $ ros2 run py_service_pkg robot_turning_client
 
 첫번째 클라이언트가 끝날 때 까지 2번째 클라이언트는 기다린 후 움직인다.
 
-![Untitled](ROS2_Study%20Lecture13%20c736a9e0237748d2beb22e465763e212/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/80799025/179396602-2c003faf-af0a-4e36-b1ee-ca4c9b8c3562.png)
 
 다음과 같이 위 터미널에서는 5초, 아래 터미널에는 1초라는 duration을 입력하였다.
 
@@ -152,6 +150,7 @@ $ ros2 run py_service_pkg robot_turning_client
 
 따라서 Service의 특성으로 작업이 끝날때까지 다음작업은 기다리게 된다는 것이다.
 
+</br>
 이번에는 위 Service의 코드를 분석해보았다.
 
 ```python
