@@ -1,5 +1,3 @@
-# ROS2_Study Lecture14
-
 # Service 프로래밍 - C++
 
 전 강의에서는 Python을 통해 Service를 프로그래밍 하였고, 이번에는 C++을 이용하여 진행하였다.
