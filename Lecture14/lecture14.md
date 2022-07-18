@@ -25,11 +25,12 @@ terminal3에 입력한 마지막 숫자는 duration,linear, angular이다.
 
 먼저 위 예제에서 사용된 src타입을 알아보았다.
 
-![Untitled](ROS2_Study%20Lecture14%20187bd3460d74412e85f0763830043987/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/179472318-35a4aea2-4d99-4de2-b818-174cc22d4766.png)
 
 다음과 같이 time_durtion, angular, linear라는 값을 받는것을 볼 수 있다.
 
 위 Sevice의 코드를 살펴보았다.
+</br>
 
 **robot_turning_server**
 
@@ -144,6 +145,7 @@ int main(int argc, char **argv) {
 ## Service Client 구현
 
 Client부의 코드를 분석하였다.
+</br>
 
 **robot_turning_client**
 
@@ -249,6 +251,7 @@ int main(int argc, char **argv)
   return 0;
 }
 ```
+</br>
 
 **비동기** 
 
