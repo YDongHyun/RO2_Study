@@ -1,5 +1,3 @@
-# ROS2_Study Lecture15
-
 # ROS2 Action
 
 ## Action의 개념
@@ -10,7 +8,7 @@
 
 동시 여러 request작업은 불가능, 하지만 `MultiThreadedExecutor`를 이용하여 해결 가능하다.
 
-![Untitled](ROS2_Study%20Lecture15%204c158926cdd44ae38c2f47f523ee8096/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/179730827-f171cec9-fa46-4d9f-a7a4-782ed4aac02b.png)
 
 image from : [https://docs.ros.org/en/foxy/Tutorials/Understanding-ROS2-Actions.html](https://docs.ros.org/en/foxy/Tutorials/Understanding-ROS2-Actions.html)
 
@@ -33,6 +31,7 @@ EX)
 Action을 네비게이션이라 이해하고, 목적지를 Request받아 경로탐색, 운전 중간 FeedBack, 도착시 Requset한다.
 
 실제 Nav2라는 ROS2 자율주행 프로젝트가 있는데, 이 프로젝트에서 Action이 많이 사용됨을 확인 할 수 있었다.
+</br>
 
 ## 피보나치 수열 예제
 
@@ -48,13 +47,14 @@ $ ros2 run py_action_pkg fibonacci_action_server
 $ ros2 run py_action_pkg fibonacci_action_client
 ```
 
-![Untitled](ROS2_Study%20Lecture15%204c158926cdd44ae38c2f47f523ee8096/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/179730887-bff21a96-e09d-457c-87be-1192ac6cff85.png)
 
  Server가  Request를 받을 때 까지 대기하였다가, client로 부터 Goal Request를 받자 작동하였다.
 
 그리고 실행하면서 중간중간 FeedBack을 보내는 것을 볼 수 있었다.
 
 위 예제에서 사용한 예제의 데이터 타입은 action타입이다.
+</br>
 
 **Fibonacci.action**
 
@@ -72,6 +72,7 @@ int32[] partial_sequence
 Topic의 msg, Service의 srv처럼 데이터 타입을 가지고 있는데,
 
 Action의 경우에는 Goal, Result, Feedback 이렇게 3분류로 받는다.
+</br>
 
 ## ROS2 Action Commands
 
@@ -100,7 +101,7 @@ $ ros2 action send_goal <Action-name> <action-type> {actual: value}
 *$ ros2 action send_goal fibonacci custom_interfaces/action/Fibonacci "{order: 5}"*
 ```
 
-![Untitled](ROS2_Study%20Lecture15%204c158926cdd44ae38c2f47f523ee8096/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/80799025/179730908-4a785f80-3d4b-46b6-afa6-0c686d1563c7.png)
 
 다음과 같이 order 5만큼이 실행 되었다.
 
@@ -110,9 +111,10 @@ $ ros2 action send_goal <Action-name> <action-type> {actual: value}
 $ ros2 action send_goal --feedback fibonacci custom_interfaces/action/Fibonacci "{order: 5}"
 ```
 
-![Untitled](ROS2_Study%20Lecture15%204c158926cdd44ae38c2f47f523ee8096/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/80799025/179730918-46dad82d-f18d-4948-b206-b6ab3bbc17f0.png)
 
 전과 달리 실행되면서 FeedBack을 내보내고 있음을 볼 수 있다.
+</br>
 
 ## Goal Cancel
 
@@ -127,4 +129,4 @@ $ ros2 run py_action_pkg fibonacci_action_client_cancel
 
 위 예제는 일정시간이 지나면 Cancel되도록 프로그래밍 되있다.
 
-다르게 프로그래밍하면 특정 값이 나오거나 값을 바꿀경우 Cancel되도록 할 수 있을것이다.이런 방식이 아니라, Feedback에 따라서 Cancel의 요청 여부를 결정지을 수도 있겠지요.
+다르게 프로그래밍하면 특정 값이 나오거나 값을 바꿀경우 Cancel되도록 할 수 있을것이다.
