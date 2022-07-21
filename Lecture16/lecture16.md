@@ -1,5 +1,3 @@
-# ROS2_Study Lecture16
-
 # Action 프로그래밍 - Python
 
 ## Action Server 작성
@@ -109,6 +107,7 @@ if __name__ == '__main__':
 - 중간 결과를 Feedback ⇒ `publish_feedback`
 - 최종 Result Response ⇒ `Fibonacci.Result()`
 - Feedback을 보내면서 내부 로직 실행 ⇒ `execute_callback()`
+</br>
 
 **ActionServer 생성**
 
@@ -120,6 +119,8 @@ self._action_server = ActionServer(
     <execute_callback>,
     <goal_callback>)
 ```
+
+</br>
 
 ActionServer 작성 - cancel ver.
 
@@ -163,11 +164,15 @@ def cancel_callback(self, goal_handle):
     return CancelResponse.ACCEPT
 ```
 
+</br>
+
 ### MultiThreadedExecutor
 
 생성한 Node를 실행하는 executor는 SingleThrededExecutor, MultiThrededExecutor 2가지 존재
 
  MultiThreadedExecutor는 spin실행시 사용할 Node와 함께 전달하면multithreading 한다.
+ 
+</br>
 
 ## Action Client 작성
 
@@ -267,7 +272,9 @@ if __name__ == "__main__":
     main()
 ```
 
-Action Client작성 - Cancel ver.
+</br>
+
+## Action Client작성 - Cancel ver.
 
 Action Client Cancel이 가능한 코드를 살펴보았다.
 
