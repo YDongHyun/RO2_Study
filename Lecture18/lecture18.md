@@ -1,8 +1,6 @@
-# ROS2_Study Lecture18
-
 # 중간 프로젝트 Maze World
 
-**Action**로봇이 미로를 탈출 할 수 있도록 하는 예제
+로봇이 미로를 탈출 할 수 있도록 하는 예제
 
 ## ROS2 Description
 
@@ -33,7 +31,7 @@ $ ros2 launch gcamp_gazebo diffbot_description.launch.py
 
 오류를 해결하기 위해 방법들을 찾아봤지만 아직 해결하지 못하였다.
 
-![Untitled](ROS2_Study%20Lecture18%20c8d307035d0f4306b7c0d9a8a1fd8e11/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/180639087-7f3bc012-30d2-43f6-9699-1de046a4fe33.png)
 
 위 예제에 막대들이 있는것을 볼 수 있는데,
 
@@ -42,6 +40,7 @@ $ ros2 launch gcamp_gazebo diffbot_description.launch.py
 로봇은 여러 파츠들로 구성되어있는데 TF는 각 파츠 사이의 변환을 도와준다.
 
 막대들은 Tree형태의 구조를 가진다.
+</br>
 
 ## Maze Escape
 
@@ -51,7 +50,7 @@ $ ros2 launch gcamp_gazebo diffbot_description.launch.py
 $ ros2 launch gcamp_gazebo maze_world.launch.pyros2 launch gcamp_gazebo maze_world.launch.pyros2 launch gcamp_gazebo maze_world.launch.py
 ```
 
-![Untitled](ROS2_Study%20Lecture18%20c8d307035d0f4306b7c0d9a8a1fd8e11/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/80799025/180639089-da605955-3074-47c0-8cfb-25485c24fa60.png)
 
 이 예제에서는 초록박스(탈출구) 까지 로봇을 이동시키면 성공이다.
 
@@ -75,7 +74,7 @@ $ sudo apt install python3-opencv
 
 방향을 입력하여 로봇이 탈출 할수 있도록 해보았다.
 
-![Untitled](ROS2_Study%20Lecture18%20c8d307035d0f4306b7c0d9a8a1fd8e11/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/80799025/180639093-8835892a-31f7-40da-b837-feca3b88eb3b.png)
 
 로봇이 결승점에 도달한 것을 확인할 수 있었다.
 
@@ -87,6 +86,7 @@ $ sudo apt install python3-opencv
 - 초록 박스를 인식 ⇒ Image
 
 등이 있다.
+</br>
 
 ## Image sub
 
@@ -105,9 +105,10 @@ image_view를 설치해도 제대로 적용되지 않아 show image를 이용하
 $ ros2 run image_tools showimage --ros-args --remap /image:=/diffbot/camera_sensor/image_raw
 ```
 
-![Untitled](ROS2_Study%20Lecture18%20c8d307035d0f4306b7c0d9a8a1fd8e11/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/80799025/180639097-fd442655-8ad8-4398-a78b-282abd4bbca6.png)
 
 다음과 같이 로봇의 시점을 볼 수 있었다.
+</br>
 
 ROS2는 이미지를 다루기 위한 msg 형식을 갖고있다.
 
@@ -193,6 +194,7 @@ def main(args=None):
 if __name__ == "__main__":
     main()
 ```
+</br>
 
 ## Odom sub
 
@@ -212,7 +214,7 @@ if __name__ == "__main__":
 $ ros2 topic list
 ```
 
-![Untitled](ROS2_Study%20Lecture18%20c8d307035d0f4306b7c0d9a8a1fd8e11/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/80799025/180639104-7eb51b6f-c32b-43be-810a-7a7ac6812b92.png)
 
 토픽을 확인해본 결과 각도에 관한 값들이 4개의 변수로 이루어져 있는것을 볼 수 있다.
 
@@ -318,6 +320,6 @@ if __name__ == "__main__":
 $ ros2 run py_action_pkg odom_sub_node
 ```
 
-![Untitled](ROS2_Study%20Lecture18%20c8d307035d0f4306b7c0d9a8a1fd8e11/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/80799025/180639110-dc1ff83d-8952-4d3b-a136-4dd8b903d448.png)
 
 다음과 같이 실시간으로 현재 각을 출력한다.
