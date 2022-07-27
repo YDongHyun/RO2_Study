@@ -1,5 +1,3 @@
-# ROS2_Study Lecture19
-
 # 중간 프로젝트 - Maze World2
 
 저번 18번 강의에서는 Maze World 예제를 실행하였다.
@@ -16,7 +14,7 @@
 $ ros2 interface show custom_interfaces/action/Maze
 ```
 
-![Untitled](ROS2_Study%20Lecture19%20b3477b75fb8f4016931b5716f8e192d0/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/80799025/181170587-48160849-352a-4fce-be56-77d100e131d6.png)
 
 다음과 같은 Action의 타입을 확인할 수 있었다.
 
@@ -174,7 +172,7 @@ namespace란, 예로들어 로봇 `diffbot`이 있다고 가정하였다.
         package='py_action_pkg',
 				#namespace에 로봇 이름 지정
         namespace='diffbot',
-****        executable='maze_action_server',
+        executable='maze_action_server',
         name='maze_action_server',
         output='screen'
     )
@@ -197,7 +195,7 @@ def generate_launch_description():
     maze_action_srv_node = Node(
         package='py_action_pkg',
         namespace='diffbot', # <- 다음과 같이 지정
-****        executable='maze_action_server',
+        executable='maze_action_server',
         name='maze_action_server',
         output='screen'
     )
@@ -223,5 +221,5 @@ setup(
         ('share/' + package_name, ['package.xml']),
 				# launch file 추가
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
-****    ]
+    ]
 ```
