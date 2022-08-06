@@ -13,11 +13,13 @@ class HelloworldSubscriber(Node):
         qos_profile=QoSProfile(depth=10)
         # subscriber 생성  callback함수는 subscribe_topic_message
         self.helloworld_subscriber=self.create_subscription(
-            String, 'helloworld', self.subscribe_topic_message, qos_profile
-        )
+            String, 
+            'helloworld', 
+            self.subscribe_topic_message, 
+            qos_profile)
     # callback 함수
     def subscribe_topic_message(self,msg):
-        self.get_logger().info('Received message:{0}'.format(msg.data))
+        self.get_logger().info('Received message: {0}'.format(msg.data))
 
 def main(args=None):
     rclpy.init(args=args)
