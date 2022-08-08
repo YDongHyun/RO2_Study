@@ -44,7 +44,7 @@ Ros 포럼에 있는대로 하면 오류 발생하였습니다.
 
 ```xml
 다음과 같이 변경하여 오류 해결
-~~<build_depend>rosidl_default_generators</build_depend>~~
+<삭제 <build_depend>rosidl_default_generators</build_depend> >
 <buildtool_depend>rosidl_default_generators</buildtool_depend>
 ```
 
