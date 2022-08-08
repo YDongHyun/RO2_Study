@@ -69,7 +69,7 @@ ModuleNotFoundError: No module named 'catkin_pkg'
 $ pip install catkin_pkg
 ```
 
-No module named 'lark’ 오류 발생
+### No module named 'lark’ 오류 발생
 
 `pip install lark`로 해결하였습니다.
 
